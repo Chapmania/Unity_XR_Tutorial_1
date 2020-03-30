@@ -30,7 +30,7 @@ public class MainScript : MonoBehaviour
 	void Update()
 	{
 		if (debugLog)
-			LogHierarchy(platform.transform, 0);
+			LogHierarchy(this.transform, 0);
 		//LogHierarchy(transform, 0);
 	}
 
