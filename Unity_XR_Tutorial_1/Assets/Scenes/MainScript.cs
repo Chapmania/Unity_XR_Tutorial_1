@@ -18,6 +18,7 @@ public class MainScript : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
+		platform = GameObject.Find("Platform");
 		tracker = GameObject.Find("Tracker");
 		leftSensor = GameObject.Find("Left Sensor");
 		rightSensor = GameObject.Find("Right Sensor");
@@ -29,7 +30,8 @@ public class MainScript : MonoBehaviour
 	void Update()
 	{
 		if (debugLog)
-			LogHierarchy(transform, 0);
+			LogHierarchy(platform.transform, 0);
+		//LogHierarchy(transform, 0);
 	}
 
 	static void LogHierarchy(Transform t, int level)
@@ -38,6 +40,10 @@ public class MainScript : MonoBehaviour
 		indent = indent.PadLeft(level * 4, ' ');
 
 		Debug.Log(indent + t.gameObject.name + " LCS: " + t.localPosition + " WCS: " + t.position);
+		
+		Debug.Log(indent + t.gameObject.name + " LCS: " + t.localPosition + " EulerAngles: " + t.localEulerAngles + " Quaternion: "+ Quaternion.Euler(t.localEulerAngles));
+		Debug.Log(indent + t.gameObject.name + " WCS: " + t.position + " EulerAngles: " + t.eulerAngles + " Quaternion: " + Quaternion.Euler(t.eulerAngles));
+
 
 		for (int i = 0; i < t.childCount; i++)
 			LogHierarchy(t.GetChild(i), level + 1);
