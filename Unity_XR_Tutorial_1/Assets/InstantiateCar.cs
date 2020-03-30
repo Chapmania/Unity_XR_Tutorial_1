@@ -6,8 +6,8 @@ public class InstantiateCar : MonoBehaviour
 {
     // Instantiates prefabs in a circle formation
     public GameObject prefab;
-    public int numberOfObjects = 20;
-    public float radius = 5f;
+    public int numberOfObjects = 10;
+    public float radius = 10f;
     void Start()
     {
         for (int i = 0; i < numberOfObjects; i++)
