@@ -432,10 +432,10 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 0
-  m_Color: {r: 0.9811321, g: 0.7854846, b: 0.023139905, a: 1}
+  m_Color: {r: 0.8490566, g: 0.7370041, b: 0.27634388, a: 1}
   m_Intensity: 10
-  m_Range: 5
-  m_SpotAngle: 25
+  m_Range: 10
+  m_SpotAngle: 50
   m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
@@ -819,6 +819,97 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1889809189}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1290073967
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1290073969}
+  - component: {fileID: 1290073971}
+  - component: {fileID: 1290073970}
+  - component: {fileID: 1290073968}
+  m_Layer: 0
+  m_Name: JigglySphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1290073968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290073967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28bc9331ad8fd2b4193e7ee5e46910f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1290073969
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290073967}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1290073970
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290073967}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 3c69c714c96198941bbfb44c81b977e6, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1290073971
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290073967}
+  m_Mesh: {fileID: 0}
 --- !u!1 &1342175975
 GameObject:
   m_ObjectHideFlags: 0
@@ -1258,7 +1349,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726705457}
-  m_LocalRotation: {x: 0.66623634, y: -0.32969204, z: 0.515908, w: 0.42575973}
+  m_LocalRotation: {x: 0.65054834, y: -0.34797117, z: 0.5037597, w: 0.4493652}
   m_LocalPosition: {x: -2.4752736, y: 4.155469, z: -5.580093}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1286,7 +1377,7 @@ PrefabInstance:
     - target: {fileID: 5851730948986158344, guid: e511fd05bc130bf45acb161ecec20300,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.991333
+      value: -0.3
       objectReference: {fileID: 0}
     - target: {fileID: 5851730948986158344, guid: e511fd05bc130bf45acb161ecec20300,
         type: 3}
@@ -1342,6 +1433,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6463199441967926992, guid: 0d191eff128a0c944a0962cb0ce360e0,
+        type: 3}
+      propertyPath: m_Name
+      value: Car With HeadLight
+      objectReference: {fileID: 0}
     - target: {fileID: -14579735058771121, guid: 0d191eff128a0c944a0962cb0ce360e0,
         type: 3}
       propertyPath: m_Type
@@ -1386,11 +1482,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BoundingSphereOverride.x
       value: 2.7948189e+20
-      objectReference: {fileID: 0}
-    - target: {fileID: 6463199441967926992, guid: 0d191eff128a0c944a0962cb0ce360e0,
-        type: 3}
-      propertyPath: m_Name
-      value: Car With HeadLight
       objectReference: {fileID: 0}
     - target: {fileID: 6463199441967926993, guid: 0d191eff128a0c944a0962cb0ce360e0,
         type: 3}
