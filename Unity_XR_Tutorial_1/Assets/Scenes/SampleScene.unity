@@ -813,6 +813,7 @@ MonoBehaviour:
   centerCar: {fileID: 2105236177}
   axis: {x: 0, y: 1, z: 0}
   angle: 10
+  carSpeed: 2
 --- !u!4 &1283221324 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5851730948986158344, guid: e511fd05bc130bf45acb161ecec20300,

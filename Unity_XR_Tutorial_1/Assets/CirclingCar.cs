@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class CirclingCar : MonoBehaviour
 {
-    // Add this script to Cube(2)  
-    public GameObject centerCar;//to get the position in worldspace to which this gameObject will rotate around.
-
-    public Vector3 axis;//by which axis it will rotate. x,y or z.
-
-    public float angle; //or the speed of rotation.
-
-    // Update is called once per frame
+    float timer = 0.0f;
+    int radius = 7;
+    public float carSpeed;
     void Update()
     {
-        //Gets the position of your 'Turret' and rotates this gameObject around it by the 'axis' provided at speed 'angle' in degrees per update 
-        transform.RotateAround(centerCar.transform.position, axis, angle);
+        timer += Time.deltaTime;
+        float x = Mathf.Cos(carSpeed/10 * timer);
+        float z = Mathf.Sin(carSpeed/10 * timer);
+        transform.position = new Vector3(x * radius, 0f, z * radius);
+        transform.forward = Vector3.Cross(transform.position, transform.up);
     }
 }
