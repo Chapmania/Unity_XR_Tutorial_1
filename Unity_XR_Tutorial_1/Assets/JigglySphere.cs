@@ -48,7 +48,7 @@ public class JigglySphere : MonoBehaviour
         mesh.triangles = triangles;
         mesh.RecalculateNormals();
     }
-   /* void Update()
+    void Update()
     {
         Mesh mesh = GetComponent<MeshFilter>().mesh;
         Vector3[] vertices = mesh.vertices;
@@ -61,7 +61,7 @@ public class JigglySphere : MonoBehaviour
         }
 
         mesh.vertices = vertices;
-    }*/
+    }
     private void OnDrawGizmos()
     {
         if (vertices == null)
